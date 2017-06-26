@@ -1,0 +1,10 @@
+<ion-view>
+	<ion-nav-title>Horarios Metropolitano</ion-nav-title>
+	<ion-content>	
+		<ion-list>
+	    	<ion-item ng-repeat="linha in listaDeLinhas" href="#/linhaEscolhida/{{linha}}">
+	      		{{linha.nome}}
+	    	</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

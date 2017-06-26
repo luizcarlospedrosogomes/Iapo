@@ -1,0 +1,14 @@
+Running command: "C:\Program Files\nodejs\node.exe" D:\Users\usuario\Documents\OneDrive\Documentos\ionic\Iapo\hooks\after_prepare\010_add_platform_class.js D:/Users/usuario/Documents/OneDrive/Documentos/ionic/Iapo
+
+
+add to body class: platform-android
+
+ANDROID_HOME=C:\Program Files (x86)\Java
+
+JAVA_HOME=C:\Program Files (x86)\Java\jdk1.8.0_111
+
+Subproject Path: CordovaLib
+
+Starting a new Gradle Daemon for this build (subsequent builds will be faster).
+
+

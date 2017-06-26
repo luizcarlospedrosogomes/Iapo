@@ -1,0 +1,13 @@
+cordova build android
+cordova build --release android
+
+--keytool -genkey -v -keystore minha-chave.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+keytool -genkey -v -keystore lcpg.keystore -alias lcpg -keyalg RSA -keysize 2048 -validity 10000
+--jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore minha-chave.keystore platforms/android/build/outputs/apk/		android-release-unsigned.apk alias_name
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore lcpg.keystore platforms/android/build/outputs/apk/android-release-unsigned.apk lcpg
+====SENHA: PEGOYHWH
+
+--zipalign -v 4 platforms/android/build/outputs/apk/android-release-unsigned.apk MeuPrimeiroApp.apk
+zipalign -v 4 platforms/android/build/outputs/apk/android-release-unsigned.apk Iapo.apk
+
+
