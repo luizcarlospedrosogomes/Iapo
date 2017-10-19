@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+			<ion-icon name="clock"></ion-icon>
+      {{linha.nome}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+		<ion-card>
+        <ion-card-content>
+						<ion-item-group>
+								<ion-item *ngFor="let horario of linha.horario">
+										<b>{{horario.hora}}</b> -- {{horario.obs}}
+								</ion-item>
+							</ion-item-group>
+        </ion-card-content>
+     </ion-card>
+</ion-content>
